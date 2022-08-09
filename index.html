@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services.</title>
+    <script src="https://kit.fontawesome.com/89d1297cf4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        .intro{
+          
+            font-family: 'Shadows Into Light Two', cursive;
+        }
+        .container{
+           padding:1px 3px 2px; background:linear-gradient(45deg,#0000ff,#0000c0,#c6c600,#4949fc,#ffe800,#530fad,#2b2eff,#ffeabf);
+            background-size:400% 400%;
+            animation: change 10s ease-in-out infinite;
+            margin: 0 auto;
+            max-width: 650px;
+           /* background: white; */
+           color: #111222;
+           border-radius:10px;
+        }
+        @keyframes change{
+            0%{
+                background-position:0 50%;
+            }
+            50%{
+                background-position:100% 50%;
+            }
+            100%{
+                background-position:0 50%;
+            }
+        }
+        img{
+            display: block;
+           width:80%;
+           max-height: 100vh;
+          border-radius: 15px;
+           margin: 0 auto;
+        }
+        .heading{
+            text-align: center;
+            border: 1px solid beige;
+            padding: 15px 0px;
+            border-radius: 5px;
+            /* margin:0 50px; */
+            margin-top:30px;
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        .image{
+            border-top: 1px solid beige;
+            border-bottom: 1px solid beige;
+            margin-top:19px;
+            padding: 15px;
+        }
+        .intro{
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+            line-height:35px;
+           
+           max-width: 350px;
+           margin: auto;
+           color:beige;
+        }
+        h3{
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 100;
+            margin-bottom: 23px;
+        }
+        h1,h2{
+            font-family: 'Playfair Display', serif;
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        ul{
+            padding: 0;
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            margin: 8px auto;
+            font-family: 'Poppins', sans-serif;
+        }
+        .offers{
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .media-icons{
+margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+        }
+     a{
+            font-size: 2em;
+            margin:40px 30px 30px;
+        }
+        .fa-twitter{
+            color:#1da1f2;
+        }
+        .fa-facebook{
+            color: #4267b2;
+        }
+        .fa-instagram{background:
+    radial-gradient(circle at 20% 110%,
+    #ffdc80 0%,
+    #fcaf45 10%,
+    #f77737 20%,
+    #f56040 30%,
+    #fd1d1d 40%,
+    transparent) no-repeat,
+    radial-gradient(circle at 50% 130%,
+    #e1306c 50%, 
+    #c13584 60%,
+     #833ab4 70%,
+     /* #5851db 80%,
+     blue 90%, */
+    transparent) no-repeat,
+    radial-gradient(circle at 30% 130%,
+    #5851db 80%,
+    blue 90%,
+    transparent) no-repeat;
+    color: #fff;
+    padding: 0 2px;
+    border-radius: 5px;
+}
+.fa-whatsapp{
+    color: #3dc24e;
+}
+        .contact-us{
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            max-width: 500px;
+            margin:0 auto;
+        }
+        form{
+           
+            text-align: center;
+            line-height: 40px;
+        }
+        label{
+            margin-right: 30px;
+            font-size: larger;
+        }
+        .phoneNo{
+            margin-right: 2px;
+        }
+        form p{
+            line-height: 25px;
+            max-width: 350px;
+            margin:15px auto;
+            font-size: 1.2rem;
+        }
+        input::placeholder{
+            color:rgb(0, 81, 255);
+        }
+        input{
+            width: 250px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: none;
+            color: #000;
+            outline: none;
+            border: beige;
+        }
+        input[type="button"]{
+            width: 100px;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 3px 5px 15px #111222 ;
+            color:blue;
+            background:#ffff00 ;
+        }
+        input[type="button"]:hover{
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .services{
+        max-width:250px;
+            position:relative;
+            z-index:222;
+            backdrop-filter:blur(10px);
+            background:rgba(255,255,255,.5);
+            border-radius:10px;
+            margin:0px auto;
+            padding:5px 0 10px;
+            color:white;
+        }
+        footer p{
+            font-family: 'Inconsolata', monospace;
+            opacity: 0.675;
+            text-align: center;
+        }
+        @media screen and (max-width:567px){
+            .heading{
+                font-size: 25px;
+            } 
+            .container{
+                max-width:300px;
+                margin: auto;
+            } 
+            .intro{
+                font-size: 20px;
+            }
+            .contact-us{
+                max-width: 295px;
+                font-size: 0.935rem;
+            }
+            .media-icons{
+                margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+            }
+            a{
+            font-size: 1.2em;
+            margin:40px 20px 30px;
+        }
+    
+        }
+        .image:hover{
+            opacity: .5;
+        }
+        h1 span{
+            font-family: 'Shadows Into Light Two', cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1 class="heading">P & P Cleaning Services.</h1>
+        <h1 class="intro">Your cleaning desires? <br> <span>
+            Let's Get Cleaning!
+        </span>  
+    </h1>
+        <div class="image">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/042/082/original/spacejoy-OlFHzNjg9kY-unsplash.jpg?1659104372" alt="Cleaning Services">
+        </div>
+        <h3>Your satisfaction, our concern... </h3>
+        <div class="services">
+        <h2>Our services:</h2>
+        <ul>
+            <li>Whole House Cleaning</li>
+            <li>Room Cleaning</li>
+            <li>Bathroom Cleaning</li>
+            <li>Kitchen Cleaning</li>
+            <li>Closet Cleaning</li>
+            <li>Garage Cleaning</li>
+            <li>Office Cleaning</li>
+            <li>Study Cleaning</li>
+        </ul>
+        </div>
+        <p class="offers">You can mix and match our services to cater to your needs.</p>
+        <p class="contact-us">For consultation and scheduling, please call: 0816 850 2558 or 0814 518 4963. You can also email us at sylvesterpro2017@gmail.com.</p>
+        <div class="media-icons">
+            <a href="https://web.facebook.com/promise.sylvester.73" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/PpWanmo"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/promise.syl/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/qr/7H22B6FR4DB6P1"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/sylvester-promise-7492a5247/"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <form action="">
+            <p>
+                Want to know more about our services? Register now so we keep you updated. <br>
+            </p>
+            <div class="form-output">
+                <label for="">Name </label>
+            <input type="text" placeholder="Please enter your name" class="name" required ><br>
+            <label for="">Email </label>
+            <input type="email" name="" id="" placeholder="Please enter your email address" class="email" required><br>
+            <label for="" class="phoneNo">Phone number </label>
+            <input type="tel" name="" placeholder="Please enter your phone number " id="" required><br>
+            <input type="button" value="Subscribe" class="button">
+            </div>
+
+        </form>
+        <footer>
+        <p>Coded by Promise Sylvester</p>
+        </footer>
+    </section>
+    <script>
+        function subscribe(){
+            let name =document.querySelector(".name").value;
+            let email=document.querySelector(".email").value;
+            if(name.length>0 && email.length>0){
+                alert(`Welcome ${name}! You have successfully subscribed 😉`);
+            }
+            else if(name.length>0 && email.length===0){
+                alert(`Welcome ${name}!😊 Please enter your email address to get started`);
+            }
+            else{
+                alert(`Oops! You didn't enter your name🙁 `);
+            }
+        }
+        let applyButton=document.querySelector(".button");
+        applyButton.addEventListener("click", subscribe);
+
+        ScrollReveal({ distance:'60px', duration:2500, delay:400});
+        ScrollReveal().reveal('input',{delay:700, origin:'left', interval:300});
+        ScrollReveal().reveal('label',{delay:500, origin:'bottom'});
+        ScrollReveal().reveal('.media-icons a, .services li',{delay:700, origin:'bottom', interval:300});
+        ScrollReveal().reveal('.heading,.offers,.services h2',{delay:500, origin:'left'});
+        ScrollReveal().reveal('img',{delay:600, origin:'bottom'});
+        ScrollReveal().reveal('.contact-us',{delay:700, origin:'right'});
+</script>
+</body>
+</html>
